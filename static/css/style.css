@@ -1171,6 +1171,78 @@ footer section.bottom div.bottom ul li a {
 	display: inline-block;
 }
 
+#product {
+	background: #ffc9b7;
+	padding: 72px 0 300px;
+	text-align: center;
+}
+#product section.wrapper{
+	position: relative;
+}
+
+#product a.logo-badge {
+	display: inline-flex;
+	margin-bottom: 35px;
+	padding: 17px 25px;
+	background: #fff;
+	border-radius: 30px;
+	align-items: center;
+}
+#product a.logo-badge img {
+	height: 22px;
+	margin-right: 10px;
+}
+
+#product h1 {
+	font-size: 44px;
+	font-weight: bold;
+	max-width: 70%;
+	margin: 0 auto 25px;
+}
+#product p {
+	width: 60%;
+	margin: 0 auto 25px;
+	font-size: 20px;
+}
+#product a.button {
+	font-size: 14px;
+	background: rgb(255, 228, 219);	
+	color: rgb(255, 120, 75);
+	padding: 13.5px 20px;
+	display: inline-block;	
+	border-radius: 10px;
+}
+
+#product img.hero {
+	display: block;
+	width: 100%;
+	position: absolute;
+	margin: 60px auto 0;
+}
+
+#inner-page-brands {
+	padding: 450px 0 0;
+	text-align: center;
+}
+#inner-page-brands h6 {
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+#inner-page-brands ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+#inner-page-brands ul li {
+	
+}
+#inner-page-brands ul li a {
+	
+}
+#inner-page-brands ul li a img {
+	
+}
 
 
 

@@ -2,7 +2,7 @@ import json
 from django import forms
 from django.http.response import HttpResponse
 from django.urls import reverse
-from django.shortcuts import render , redirect
+from django.shortcuts import render , get_object_or_404
 from django.http.response import HttpResponse
 from web.models import Blog, Contact,  MarketingFeature, Product, Subscribe, Costumer,Feature,VideoBlog, Testimonial
 from web.forms import ContactForm
@@ -82,3 +82,15 @@ def contact(request):
         }
 
     return HttpResponse(json.dumps(response_data), content_type = "application/javascript")
+
+
+def product(request,pk):
+    products = get_object_or_404(Product.objects.filter(pk=pk))
+
+    Costumers = Costumer.objects.filter(product=products)
+    print(product)
+    context={
+        "products" : products,
+        "Costumers" : Costumers
+    }
+    return render(request,"product.html",context=context)
